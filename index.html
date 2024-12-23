@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Picker Tool</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Pick a Color</h1>
+
+      <input type="color" id="colorPicker" value="#ff5733" />
+      <div class="color-box" id="colorBox"></div>
+
+      <p>
+        Hex: <span id="hexValue">#ff5733</span>
+        <button onclick="copy('hexValue')">Copy</button>
+      </p>
+      <p>
+        RGB: <span id="rgbValue">rgb(255, 87, 51)</span>
+        <button onclick="copy('rgbValue')">Copy</button>
+      </p>
+      <p>
+        HSL: <span id="hslValue">hsl(9, 100%, 60%)</span>
+        <button onclick="copy('hslValue')">Copy</button>
+      </p>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
